@@ -13,6 +13,10 @@
       --accent: #00FF88;
     }
 
+    * {
+      transition: all 0.3s ease-in-out;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -37,6 +41,10 @@
       margin-left: 20px;
       color: var(--text);
       text-decoration: none;
+    }
+
+    nav a:hover {
+      color: var(--accent);
     }
 
     .hero {
@@ -65,10 +73,41 @@
       cursor: pointer;
     }
 
+    .btn:hover {
+      background: var(--accent);
+    }
+
     .section {
       padding: 60px 20px;
       max-width: 1000px;
       margin: auto;
+    }
+
+    .login-section {
+      background-color: #1c1c1c;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .login-section input {
+      padding: 12px;
+      margin: 10px;
+      width: 250px;
+      border: none;
+      border-radius: 6px;
+    }
+
+    .login-section button {
+      background: var(--primary);
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .login-section button:hover {
+      background: var(--accent);
     }
 
     footer {
@@ -86,6 +125,7 @@
     <nav>
       <a href="#sobre">Sobre</a>
       <a href="#funcionalidades">Funcionalidades</a>
+      <a href="#login">Login</a>
       <a href="#contato">Contato</a>
     </nav>
   </header>
@@ -109,6 +149,16 @@
       <li>Matchmaking inteligente e sistema de pontuação</li>
       <li>Integração com APIs de jogos populares</li>
     </ul>
+  </section>
+
+  <section class="login-section" id="login">
+    <h3>Login</h3>
+    <p>Acesse sua conta para participar de torneios ou criar eventos.</p>
+    <input type="text" placeholder="Usuário ou Email">
+    <br>
+    <input type="password" placeholder="Senha">
+    <br>
+    <button>Entrar</button>
   </section>
 
   <footer id="contato">
