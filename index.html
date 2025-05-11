@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GamesHub</title>
+  <style>
+    :root {
+      --primary: #6C2BD9;
+      --secondary: #00F0FF;
+      --background: #121212;
+      --text: #F2F2F2;
+      --accent: #00FF88;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+    }
+
+    header {
+      background: var(--primary);
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(to bottom, var(--primary), var(--background));
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      background: var(--secondary);
+      color: #000;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    footer {
+      background: #1c1c1c;
+      color: #aaa;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GamesHub</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#funcionalidades">Funcionalidades</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Unindo jogadores e torneios em um só lugar</h2>
+    <p>Participe de competições, organize eventos e suba nos rankings com a GamesHub.</p>
+    <button class="btn">Comece Agora</button>
+  </section>
+
+  <section class="section" id="sobre">
+    <h3>Sobre a GamesHub</h3>
+    <p>GamesHub é a plataforma que conecta jogadores, organizadores e marcas em um ecossistema de torneios digitais. Nosso objetivo é facilitar a experiência competitiva com ferramentas poderosas e uma comunidade engajada.</p>
+  </section>
+
+  <section class="section" id="funcionalidades">
+    <h3>Funcionalidades</h3>
+    <ul>
+      <li>Criação de torneios com gerenciamento de brackets</li>
+      <li>Rankings, estatísticas e perfis de jogadores</li>
+      <li>Matchmaking inteligente e sistema de pontuação</li>
+      <li>Integração com APIs de jogos populares</li>
+    </ul>
+  </section>
+
+  <footer id="contato">
+    <p>Contato: gameshub@email.com | Instagram: @GamesHubOfficial</p>
+    <p>&copy; 2025 GamesHub. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
